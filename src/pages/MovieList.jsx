@@ -74,8 +74,8 @@ const MovieList = () => {
         ) : (
           <>
             <div className="movie-list__grid">
-              {popularMovieList.length > 0 ? (
-                popularMovieList.map((movie, index) => (
+              {popularMovieList?.length > 0 ? (
+                popularMovieList?.map((movie, index) => (
                   <div key={index} className="movie-list__grid-item">
                     <MovieCard movie={movie} />
                   </div>
